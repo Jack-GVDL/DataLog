@@ -6,7 +6,7 @@ from Source import *
 
 # Function
 def main() -> None:
-	# ----- Config -----
+	# ----- config -----
 	# read config
 	with open("./Config_Server.json", "r") as f:
 		data = json.load(f)
@@ -15,7 +15,7 @@ def main() -> None:
 	path_data 	= data["Path_Data"]
 	path_layout = data["Path_Layout"]
 
-	# ----- Control_Data -----
+	# ----- control -----
 	# create Control_Data
 	control_data   = Control_Data()
 	control_layout = Control_Layout()
@@ -35,7 +35,7 @@ def main() -> None:
 	except Exception:
 		pass
 
-	# ----- Server -----
+	# ----- server -----
 	# start server
 	Server_main(
 		control_data,
